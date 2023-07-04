@@ -1,0 +1,70 @@
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav__link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: $black;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 1.1;
+
+    &:after {
+        content: "";
+        width: 0;
+        display: block;
+        height: .3rem;
+        background-color: $black;
+
+        transition: width .2s linear;
+    }
+
+    &:hover:after {
+        width: 100%;
+    }
+
+    & + .nav__link {
+        margin-left: 26px;
+    }
+}
+
+.nav__logo {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+
+    
+}
+
+.nav-product__link-logo:hover {
+    fill: $gray;
+    transition: fill .2s linear;
+}
+
+// .nav-product {
+//     display: flex;
+// }
+
+.nav-product__link {
+    display: inline-block;
+    vertical-align: top;
+    width: 25px;
+    height: 25px;
+
+    
+    text-decoration: none;
+
+    & + .nav-product__link {
+        margin-left: 73px;
+    }
+}
+
+.nav-product__link-ikon:hover {
+    fill: $gray;
+    transition: fill .2s linear;
+}
