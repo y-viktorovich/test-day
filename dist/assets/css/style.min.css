@@ -368,6 +368,10 @@ body {
 
 .header {
   width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
 .header__inner {
@@ -433,4 +437,55 @@ body {
 .nav-product__link-ikon:hover {
   fill: #666666;
   transition: fill 0.2s linear;
+}
+
+.intro__inner {
+  position: relative;
+  padding-top: 376px;
+  padding-bottom: 296px;
+  background-image: url(../images/intro/intro-bg.svg);
+  background-repeat: no-repeat;
+  background-position: right 100px bottom;
+}
+
+.intro__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 9.6rem;
+  color: #0F0F0F;
+  font-weight: 900;
+  line-height: 1;
+  margin-bottom: 22px;
+}
+
+.intro__subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 2.4rem;
+  margin-bottom: 60px;
+}
+
+.intro__photo {
+  position: absolute;
+  right: 100px;
+  bottom: 0;
+}
+
+.btn {
+  font-family: inherit;
+  font-size: 1.8rem;
+  color: #0F0F0F;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: top;
+  padding: 1.38em 5em;
+  border: 1px solid #0F0F0F;
+  background: none;
+  cursor: pointer;
+  transition: background-color, color 0.2s linear;
+}
+.btn:hover {
+  background-color: #0F0F0F;
+  color: #fff;
 }

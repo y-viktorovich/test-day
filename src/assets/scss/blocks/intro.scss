@@ -1,0 +1,34 @@
+.intro__inner {
+    position: relative;
+    padding-top: 376px;
+    padding-bottom: 296px;
+
+    background-image: url(../images/intro/intro-bg.svg);
+    background-repeat: no-repeat;
+    background-position: right 100px bottom;
+}
+
+
+.intro__title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9.6rem;
+    color: $black;
+    font-weight: 900;
+    line-height: 1;
+
+    margin-bottom: 22px;
+}
+
+.intro__subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 2.4rem;
+
+    margin-bottom: 60px;
+}
+
+.intro__photo {
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+}

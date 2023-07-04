@@ -1,0 +1,25 @@
+.btn {
+    font-family: inherit;
+    font-size: 1.8rem;
+    color: $black;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+
+    display: inline-block;
+    vertical-align: top;
+    padding: 1.38em 5em;
+
+    border: 1px solid $black;
+    background: none;
+    cursor: pointer;
+
+    transition: background-color, color .2s linear;
+
+    &:hover {
+        background-color: $black;
+        color: $white;
+    }
+
+
+}
