@@ -375,13 +375,14 @@ body {
 /* Blocks */
 .container {
     width: 100%;
-    max-width: 1700px;
+    max-width: 1740px;
+    padding: 0 2rem;
     margin: 0 auto;
 }
 
 .header {
     width: 100%;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     z-index: 1000;
@@ -394,7 +395,7 @@ body {
     justify-content: space-between;
     -ms-flex-align: center;
     align-items: center;
-    padding: 55px 0;
+    padding: 5.5rem 0;
 }
 
 .nav {
@@ -428,7 +429,7 @@ body {
 }
 
 .nav__link + .nav__link {
-    margin-left: 26px;
+    margin-left: 2.5rem;
 }
 
 .nav__logo {
@@ -484,7 +485,7 @@ body {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 2.4rem;
-    margin-bottom: 60px;
+    margin-bottom: 6rem;
 }
 
 .intro__photo {
@@ -512,4 +513,65 @@ body {
 .btn:hover {
     background-color: #0F0F0F;
     color: #fff;
+}
+
+.action {
+    padding: 29px 0 36px;
+    margin: 0 -20px;
+    background-color: #F5F5F5;
+}
+
+.action__inner {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.action__col {
+    width: 33.33333%;
+    padding: 0 20px;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.action__item {
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #fff;
+}
+
+.action__img {
+    min-height: 24rem;
+}
+
+.action__photo {
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.action__content {
+    font-family: inherit;
+    padding: 4.6rem 0 4.9rem 2rem;
+}
+
+.action__link {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 3rem;
+    color: #0F0F0F;
+    text-decoration: none;
+    transition: color 0.2s linear;
+}
+
+.action__link:hover {
+    color: #666666;
+    text-decoration: underline;
+}
+
+.action__text {
+    font-weight: 300;
+    color: #0F0F0F;
+    font-size: 1.6rem;
+    margin-top: 3rem;
 }
